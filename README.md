@@ -51,3 +51,31 @@ Install the required Python packages listed in `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
+
+## Code Details
+
+The script `hprera_in.py` performs the following operations:
+
+1. **Initialization**: 
+   - Sets up ChromeDriver with necessary options and configurations.
+
+2. **Loading Page**: 
+   - Navigates to the specified URL.
+
+3. **Clicking Listings**: 
+   - Iterates through the listings, clicking each one to extract data.
+
+4. **Extracting Data**: 
+   - Retrieves information from each listing, including:
+     - **RERA Number**: Extracted from the element containing 'Ref. No.'
+     - **Name**: Extracted from the table cell labeled 'Name'
+     - **GST Number**: Extracted from the table cell labeled 'GSTIN No.'
+     - **PAN Number**: Extracted from the table cell labeled 'PAN No.'
+     - **Permanent Address**: Extracted from the table cell labeled 'Permanent Address'
+
+5. **Navigating Back**: 
+   - Returns to the main page to process the next listing.
+
+6. **Saving Data**: 
+   - Writes the collected data to an Excel file named `scraped_data.xlsx`.
+
