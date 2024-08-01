@@ -15,7 +15,6 @@ This project provides a Python script for scraping RERA (Real Estate Regulatory 
 ## Installation and Setup
 
 ### Clone the Repository
-
 Clone the project repository from GitHub:
 
 ```bash
@@ -51,7 +50,6 @@ Install the required Python packages listed in `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
-
 ## Code Details
 
 The script `hprera_in.py` performs the following operations:
@@ -78,4 +76,10 @@ The script `hprera_in.py` performs the following operations:
 
 6. **Saving Data**: 
    - Writes the collected data to an Excel file named `scraped_data.xlsx`.
+
+
+
+
+
+
 
